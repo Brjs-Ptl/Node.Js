@@ -1,0 +1,22 @@
+{
+  "name": "node.js-complete-course-youtube",
+  "version": "1.0.0",
+  "description": "Work Hard to Learn Node.Js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brjs-Ptl/Node.Js-Complete-Course-Youtube.git"
+  },
+  "author": "Brijesh Patel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Brjs-Ptl/Node.Js-Complete-Course-Youtube/issues"
+  },
+  "homepage": "https://github.com/Brjs-Ptl/Node.Js-Complete-Course-Youtube#readme",
+  "dependencies": {
+    "colors": "^1.4.0"
+  }
+}
