@@ -5,3 +5,12 @@ Node.Js, Python, PHP, java run in Server
 
 javaScript excute in brouser it may be Crome, Brave, Edge Anything 
 Inside all this V8 engine is available
+
+we connect server to clint and clint to server through API
+
+Node.js make API for web, Android, IOS etc, it make one API which can be work everywhere 
+
+when value not return in console its means it does not return anything.
+
+x == y it means it check only value
+x === y it check value as well as type of variable
