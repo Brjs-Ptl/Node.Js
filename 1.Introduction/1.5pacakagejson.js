@@ -7,3 +7,4 @@ console.log("Hello Radhe".red); // Hello Radhe in red color
 
 
 // Node js is single threaded language.
+// JavaScript ia also Single Threaded Language
