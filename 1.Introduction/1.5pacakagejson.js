@@ -14,3 +14,5 @@ console.log("Package.Json");
 // You are a human or piece of Goat
 
 console.log("Hello");
+console.log("Hello Radhe");
+console.log("Jai Mahakal");
