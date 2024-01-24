@@ -23,7 +23,7 @@ const http = require("http");
 const data = require("./1.8.2makeServerExport");
 
 http.createServer((req, res) => {
-    res.writeHead(200, {"content-Type":"application/json"});
+    res.writeHead(200, {"content-Type":"application/json"}); // 200 = 0k, 201 = created, 404 = Not Found, 500 = Internal Servar Error.
     res.write(JSON.stringify(data));
     res.end();
 }).listen(5000);
