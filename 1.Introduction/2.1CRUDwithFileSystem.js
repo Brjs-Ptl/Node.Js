@@ -14,13 +14,12 @@ const filePath = `${dirPath}/monu.txt`;
 
 // to read that file which is created above
 // fs.readFile(filePath,"utf8",(err, item) => {
-//     console.log(item); //Hello world what are you doing except me
+//     console.log(item); //Hello world what are you doing except me show in terminal
 // });
 
 
 // this things already created in file "Hello world what are you doing except me tell me tell me "
 // after that we try to append "I know you people are not doing Anything"
-
 // fs.appendFile(filePath,"I know you people are not doing Anything", (err) => {
 //     if (!err) {
 //         console.log("file is updated");
@@ -29,8 +28,12 @@ const filePath = `${dirPath}/monu.txt`;
 
 
 // change the file name which created above
-fs.rename(filePath,`${dirPath}/monuDada.txt`,(err)=>{
-    if (!err) {
-        console.log("file name is updated");
-    }
-});
+// fs.rename(filePath,`${dirPath}/monuDada.txt`,(err)=>{
+//     if (!err) {
+//         console.log("file name is updated");
+//     }
+// });
+
+
+// delite file name
+fs.unlinkSync(`${dirPath}/monuDada.txt`);  // monuDada file is deleted
