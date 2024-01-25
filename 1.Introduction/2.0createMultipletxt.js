@@ -37,3 +37,15 @@ for (let i = 0; i < 5; i++) {
     fs.writeFileSync(`${dirPath}/hello${i}.txt`,"some simple text in file");
 }
 
+
+// for read file directry to check what content available there
+
+
+fs.readdir(dirPath, (err, files) => {
+    // console.log(files); // it give array of files
+    files.forEach((items)=> {    // it give normal files
+        console.log(items);
+    });
+});
+
+//
