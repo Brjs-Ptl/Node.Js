@@ -21,8 +21,16 @@ const filePath = `${dirPath}/monu.txt`;
 // this things already created in file "Hello world what are you doing except me tell me tell me "
 // after that we try to append "I know you people are not doing Anything"
 
-fs.appendFile(filePath,"I know you people are not doing Anything", (err) => {
+// fs.appendFile(filePath,"I know you people are not doing Anything", (err) => {
+//     if (!err) {
+//         console.log("file is updated");
+//     }
+// });
+
+
+// change the file name which created above
+fs.rename(filePath,`${dirPath}/monuDada.txt`,(err)=>{
     if (!err) {
-        console.log("file is updated");
+        console.log("file name is updated");
     }
 });
