@@ -16,7 +16,7 @@ for (let i = 0; i < 5; i++) {
 }
 
 
-// for read file directry to check what content available there
+// for read file directry means path to check what content available there
 // here we check how many file available ion specific file
 fs.readdir(dirPath, (err, files) => {
     // console.log(files); // it give array of files
