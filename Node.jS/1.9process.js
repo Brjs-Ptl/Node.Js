@@ -44,7 +44,7 @@ if (input[2] == "add") {           // it add the written txt file in explorer
 } else {
     console.log("invalid input");  // when not found add or remove then print invalid input
 }   
-// terminalinput given:-  node Node.JS/1.Introduction/1.9process.js add pice.txt "Are you a human or a pice of goat"
+// terminalinput given:-  node Node.jS/1.9process.js add adddd.txt "Are you a human or a pice of goat"
 // here it check if in place of 2 is add then it create pice.txt file and put inside this message "Are you a human or a pice of goat"
 // here add is in place of 2 and pice.txt is 3 and "Are you a human or a pice of goat" is 4
 
