@@ -5,8 +5,16 @@
     <title>Details of User</title>
 </head>
 <body>
-    <h1>Below is details of Someone</h1> <!--it show only this tag-->
-    <h1>Name of user is <%= user.name %></h1> <!--it show the name of user-->
-    <h1>Age of user is <%= user.age %></h1> <!--it show the name of user-->
+    <h1>User Details</h1> <!--it show only this tag-->
+    <h1>Name of user: <%= user.name %></h1> <!--it show the name of user-->
+    <h1>Age of user: <%= user.age %></h1> <!--it show the name of user-->
+
+    <!-- for iteration and getting the result  -->
+
+    <ul>
+        <% user.skils.forEach((item) => {  %>
+            <li> <%= item %> </li> 
+        <% }) %>
+    </ul>
 </body>
 </html>
