@@ -124,4 +124,7 @@ app.use("/",route); //this can give permission over app to excute route
 app.listen(4200);
 
 
-// 
+// Route Level Middleware:- Route level middleware apply in everywhere it may be single place double or over the code
+
+// Apply Middleware on single route :- It can be apply oll over the rout by default
+
