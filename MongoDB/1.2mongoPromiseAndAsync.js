@@ -46,7 +46,7 @@ async function dbConnect(){
 // ----------------------Handle with Async await-----------------------------------------
 
 const main = async () => {
-    let data = await dbCommect();
+    let data = await dbConnect();
     data = await data.find().toArray();
     console.log(data);
 }
