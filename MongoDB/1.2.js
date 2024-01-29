@@ -9,8 +9,6 @@ async function dbConnec(){              // using function with async and await
     let result = await client.connect();   // here it should wait until clint is connected to url
     let db = result.db(dataBase);
     return db.collection("product"); // here we link where we want to store or get data // inside e-commerse mant table/file is available so you chose which one you require
-    // let response = await collection.find({name:"Shree Ram"}).toArray(); // it store all data which is in collection and show it in some format
-    // console.log(response); 
 }
 console.log(dbConnec()); //when we print this it give Promise { <pending> }
 */
@@ -37,7 +35,7 @@ async function dbConnect(){
 //     console.log(resp.find().toArray()); // it give Promise { <pending> }
 // })
 
-//---------------------------------------------------------------------
+//-------------------------Handle With Promise--------------------------------------------
 // dbConnect().then((resp) => {     // it give pending promise
 //     resp.find().toArray().then((data) => {    // so here we again call promise to handle this and we get result
 //         console.log(data);
@@ -45,7 +43,7 @@ async function dbConnect(){
 // })
 //------------------------------------------------------------------------------------
 
-// we can also handle through this
+// ----------------------Handle with Async await-----------------------------------------
 
 const main = async () => {
     let data = await dbCommect();
