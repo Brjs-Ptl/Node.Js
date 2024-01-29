@@ -18,6 +18,13 @@
 
 // 6. if you want to insert data from Add Data which is in dashbord
 // 7.give full details without any change 
+//{
+//     "_id": {
+//       "$oid": "65b6a2659334c7be5f17b6d7"
+//     },
+    // "name":"Brijesh",
+    // "Age":27
+// }
 // 8. here both data in string like "name":"m 40", "brand":"Samsung"
 
 
