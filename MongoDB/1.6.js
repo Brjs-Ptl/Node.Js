@@ -1,3 +1,6 @@
+// if we inter 5 times data should be add or remove 5 times
+// -------------Update Data or Replace Data-------------------
+/*
 const dbConnect = require("./1.3mongoMainFile");
 
 const updateData = async () => {
@@ -11,3 +14,14 @@ const updateData = async () => {
 }
 
 updateData();
+*/
+// --------------------Delete Data-------------------------
+
+const dbConnect = require("./1.3mongoMainFile");
+
+const deleteData = async () => {
+    let data = dbConnect();
+    let result = await (await data).deleteOne({name:"Raju"})
+    console.log(result);
+}
+deleteData();
