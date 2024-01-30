@@ -3,14 +3,18 @@ const dbConnect = require("./1.0mongoMainFile");
 
 const app = express();
 
-app.get("",async (req, res) => {
+app.use(express.json()); // if Data post from Postman and receive/get in here i.e in terminal
+
+app.get("/",async (req, res) => {
     let data = await dbConnect();
     data = await data.find().toArray();
-    console.log(data);
+    // console.log(data);
     res.send(data)
 });
 
-app.listen(4200);  // this can be also see in postman
+app.post("/",(req,res) => {
+    console.log(req.body);           // it print the posted data through postman
+    res.send(req.body)   // same data send to postman to see the data in their output section
+})
 
-git config --global user.email "you@example.com"
-  git config --global user.name "Your Name"
+app.listen(4200);  // this can be also see in postman
