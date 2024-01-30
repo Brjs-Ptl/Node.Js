@@ -21,7 +21,10 @@ const dbConnect = require("./1.3mongoMainFile");
 
 const deleteData = async () => {
     let data = dbConnect();
-    let result = await (await data).deleteOne({name:"Raju"})
+    let result = await (await data).deleteOne({name:"Raju"})  // if we use data.deleteMany then all record deleted from that name or that category
     console.log(result);
+    if (result.acknowledge) {
+        console.log("Record Deleted");
+    }
 }
 deleteData();
