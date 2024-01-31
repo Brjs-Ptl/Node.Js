@@ -87,4 +87,21 @@ const updateInDB = async () => {
     console.log(data);
 }
 
-updateInDB();
+// updateInDB();
+
+const deleteInDB = async () => {
+    const product = mongoose.model("products",productSchema);
+    let data = await product.deleteOne({Name:"zzz"});
+    console.log(data);
+}
+// deleteInDB();
+
+const findInDB = async () => {      // to find the data
+    const product = mongoose.model("products",productSchema);
+    let data = await product.find({Name:"Oody"});
+    console.log(data);
+}
+findInDB();
+
+
+
