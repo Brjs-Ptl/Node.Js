@@ -1,6 +1,6 @@
 const express = require("express");
-require("./1.3.2configuration");
-const Product = require("./1.3.3modelSchema");
+require("./configuration");
+const Product = require("./modelSchema");
 
 const app = express();
 app.use(express.json());

@@ -1,5 +1,5 @@
 const express = require("express");
-const dbConnect = require("./1.0mongoMainFile");
+const dbConnect = require("./mongoDbMainFile");
 const mongodb = require("mongodb") // require for delete method
 
 const app = express();
